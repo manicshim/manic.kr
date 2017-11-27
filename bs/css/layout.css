@@ -1,0 +1,19 @@
+*{
+    font-family:"tahoma","나눔고딕";
+    font-size:1em;
+}
+
+
+/* 로고영역 */
+.navbar-brand {
+    width:160px;
+    background-size: 90% 60%;
+    background-image: url("../img/logo.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+/* 로그인 폼 */
+.auth-info{
+    padding: 10% 0 10% 0;
+}
