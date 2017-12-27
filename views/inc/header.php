@@ -66,16 +66,18 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-gear" aria-hidden="true"></i> 설정 <span class="caret"></span></a>
                     <ul class="dropdown-menu login_ul" role="menu">
-                        <li><a href="/site/"><i class="fa fa-sitemap" aria-hidden="true"></i> 전체보기</a></li>
+
 						<?php if (@$this->session->userdata('is_login') == true) {?>
-                        <!--li><a href="#"><i class="fa fa-gear fa-fw"></i> 설정하기</a></li-->
-                        <li><a href="/member/view/"><i class="fa fa-user fa-fw"></i> 회원정보</a></li>
+                            <!--li><a href="#"><i class="fa fa-gear fa-fw"></i> 설정하기</a></li-->
+                               <li><a href="/member/view/"><i class="fa fa-user fa-fw"></i> 회원정보</a></li>
+                            <li><a href="/auth/logout/"><i class="fa fa-sign-out fa-fw"></i> 퇴장하기</a></li>
+						<?php }else{?>
+                            <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in fa-fw"></i> 입장하기</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#joinModal"><i class="fa fa-user-plus" aria-hidden="true"></i> 회원가입</a></li>
+		                <?php }?>
                         <li class="divider"></li>
-                        <li><a href="/auth/logout/"><i class="fa fa-sign-out fa-fw"></i> 퇴장하기</a></li>
-						<?php }else{?><li><a href="#" data-toggle="modal" data-target="#joinModal"><i class="fa fa-user-plus" aria-hidden="true"></i> 회원가입</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in fa-fw"></i> 입장하기</a></li>
-		            <?php }?></ul>
+                        <li><a href="/site/"><i class="fa fa-sitemap" aria-hidden="true"></i> 전체보기</a></li>
+                    </ul>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
