@@ -37,7 +37,7 @@ class Main extends CI_Controller
 	
 	public function info()
 	{
-
+		// info mation 페이지를 생성했느냐?
 		$this->load->view('main/info');
 
 	}
