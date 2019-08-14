@@ -32,7 +32,6 @@ class Main extends CI_Controller
 	// 메인페이지
 	public function main()
 	{
-		// main page에 필요한 소스코드 작성
 		$this->load->view('main/index');
 	}
 	
