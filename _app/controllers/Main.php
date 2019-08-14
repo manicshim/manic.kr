@@ -38,7 +38,8 @@ class Main extends CI_Controller
 		// 점점 늘어나는 주석
 		// 데리고 올생각이다
 =======
->>>>>>> manic
+	>>>>>>> manic
+	// 주석확인한
 		$this->load->view('main/index');
 	}
 	
