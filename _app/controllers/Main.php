@@ -32,6 +32,14 @@ class Main extends CI_Controller
 	// 메인페이지
 	public function main()
 	{
+<<<<<<< HEAD
+		// main page에 필요한 소스코드 작성i
+		// 주석문확인
+		// 점점 늘어나는 주석
+		// 데리고 올생각이다
+=======
+	>>>>>>> manic
+	// 주석확인한
 		$this->load->view('main/index');
 	}
 	
