@@ -1,0 +1,2 @@
+# manic.kr
+home directory
