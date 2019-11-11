@@ -16,8 +16,8 @@ if ( ! function_exists('debug')) {
 	// 디버그 함수
 	function debug($data)
 	{
-		print "<xmp style=\"display:block;font:9pt 'Bitstream Vera Sans Mono, Courier New';background:#202020;color:#D2FFD2;padding:10px;margin:5px;\">";
+		print "<pre style=\"display:block;font:9pt 'Bitstream Vera Sans Mono, Courier New';background:#202020;color:#D2FFD2;padding:10px;margin:5px;\">";
 		print_r($data);
-		print "</xmp>";
+		print "</pre>";
 	}
 }
