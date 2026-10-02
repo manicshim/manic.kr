@@ -1,0 +1,11 @@
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from './app.module';
+
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  app.enableShutdownHooks();
+  await app.listen(Number(process.env.PORT) || 3100, '127.0.0.1');
+  if (process.send) process.send('ready');
+}
+
+void bootstrap();

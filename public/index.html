@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0d0c" />
+  <meta name="description" content="기록을 더 쉽고 아름답게 만드는 개발자 Manic의 프로젝트 포트폴리오" />
+  <meta property="og:title" content="Manic — Useful things, thoughtfully made." />
+  <meta property="og:description" content="여행의 순간과 교대 근무의 일상을 더 잘 읽히게 만든 두 개의 웹 프로젝트" />
+  <title>Manic — Product Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/refinements.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a class="skip" href="#work">프로젝트로 바로가기</a>
+  <header class="nav" aria-label="주요 탐색">
+    <a class="wordmark" href="#top" aria-label="처음으로"><span class="mark">M</span> MANIC</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="mailto:manic2soul@gmail.com">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="status-dot"></span> BACKEND ENGINEER · 20 YEARS OF BUILDING SYSTEMS</div>
+      <h1 id="hero-title">복잡함은 덜고,<br /><em>경험은 선명하게.</em></h1>
+      <div class="hero-bottom">
+        <p>20년의 백엔드 경험으로<br />설계하고, 만들고, 운영합니다.</p>
+        <a class="scroll-link" href="#work"><span>Selected work</span><span class="circle-arrow" aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-head reveal">
+        <p class="kicker">01 / SELECTED WORK</p>
+        <h2 id="work-title">두 개의 기록,<br />두 가지 해답.</h2>
+        <p>정보는 많아도 보는 사람은 편해야 합니다.<br />지도와 달력이라는 익숙한 인터페이스로 풀었습니다.</p>
+      </div>
+
+      <article class="project project-trip reveal">
+        <a class="project-visual" href="https://trip.manic.kr" target="_blank" rel="noopener noreferrer" aria-label="Travel Atlas 프로젝트 열기">
+          <div class="map-grid"></div>
+          <div class="map-road road-a"></div><div class="map-road road-b"></div><div class="map-road road-c"></div>
+          <div class="map-label label-a">SEOUL</div><div class="map-label label-b">GANGNEUNG</div><div class="map-label label-c">JEJU</div>
+          <div class="route"><span class="pin pin-a"></span><span class="route-line"></span><span class="pin pin-b"></span></div>
+          <div class="trip-card">
+            <span class="mini-label">LAST JOURNEY</span>
+            <strong>동해의 푸른 선을 따라</strong>
+            <span>37.7519° N · 128.8761° E</span>
+          </div>
+          <span class="visual-index">01</span>
+        </a>
+        <div class="project-copy">
+          <div><p class="kicker">TRAVEL ARCHIVE · WEB APP</p><h3>Travel Atlas</h3></div>
+          <p class="description">사진첩 속에 흩어진 여행의 순간을 지도 위 장소와 시간으로 다시 엮은 개인 여행 일지입니다. 방문한 곳을 탐색하고, 달력으로 돌아보며, 공개 범위별로 안전하게 기록합니다.</p>
+          <ul class="tags" aria-label="사용 기술"><li>React</li><li>NestJS</li><li>TypeScript</li><li>MySQL</li><li>Maps API</li></ul>
+          <a class="visit" href="https://trip.manic.kr" target="_blank" rel="noopener noreferrer"><span>프로젝트 보기</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="project project-duty reveal">
+        <a class="project-visual" href="https://duty.manic.kr" target="_blank" rel="noopener noreferrer" aria-label="Duty 프로젝트 열기">
+          <div class="phone">
+            <div class="phone-top"><span>9:41</span><span>● ◔</span></div>
+            <div class="phone-title"><span><small>OCTOBER</small><b>나의 근무</b></span><span class="avatar">J</span></div>
+            <div class="week"><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span></div>
+            <div class="calendar" aria-hidden="true">
+              <span></span><span></span><span>1<i class="day">D</i></span><span>2<i class="eve">E</i></span><span>3<i class="off">OFF</i></span><span>4<i class="off">OFF</i></span><span>5<i class="night">N</i></span>
+              <span>6<i class="night">N</i></span><span>7<i class="off">OFF</i></span><span>8<i class="day">D</i></span><span>9<i class="day">D</i></span><span>10<i class="eve">E</i></span><span>11<i class="eve">E</i></span><span>12<i class="off">OFF</i></span>
+              <span>13<i class="off">OFF</i></span><span>14<i class="night">N</i></span><span>15<i class="night">N</i></span><span class="today">16<i class="off">OFF</i></span><span>17<i class="day">D</i></span><span>18<i class="eve">E</i></span><span>19<i class="off">OFF</i></span>
+            </div>
+            <div class="next-shift"><span class="shift-icon">☀</span><span><small>NEXT SHIFT</small><b>내일은 Day 근무예요</b></span><strong>07:00</strong></div>
+          </div>
+          <span class="visual-index">02</span>
+        </a>
+        <div class="project-copy">
+          <div><p class="kicker">SHIFT SCHEDULE · MOBILE WEB</p><h3>Duty</h3></div>
+          <p class="description">복잡한 엑셀 근무표를 작은 모바일 화면에서도 바로 이해할 수 있게 바꿨습니다. 간호사의 3교대 패턴을 색과 리듬으로 구분하고, 월별 일정을 언제든 빠르게 확인합니다.</p>
+          <ul class="tags" aria-label="사용 기술"><li>React</li><li>NestJS</li><li>TypeScript</li><li>MySQL</li><li>Excel Parser</li></ul>
+          <a class="visit" href="https://duty.manic.kr" target="_blank" rel="noopener noreferrer"><span>프로젝트 보기</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="about reveal" id="about" aria-labelledby="about-title">
+      <p class="kicker">02 / HOW I WORK</p>
+      <div class="about-grid">
+        <h2 id="about-title">구축보다 중요한 건,<br /><em>오래 작동하는 것.</em></h2>
+        <div class="about-copy">
+          <p>심지훈은 2006년부터 웹과 서버를 다뤄온 백엔드 개발자입니다. 17년 이상의 실무 경험을 바탕으로 API와 데이터베이스 설계부터 클라우드 인프라, 배포와 운영까지 서비스의 전 구간을 책임져 왔습니다.</p>
+          <div class="principles"><span>01&nbsp;&nbsp;REST API & SYSTEM ARCHITECTURE</span><span>02&nbsp;&nbsp;CLOUD, CONTAINER & MIGRATION</span><span>03&nbsp;&nbsp;DATABASE & PERFORMANCE</span><span>04&nbsp;&nbsp;TEAM LEADERSHIP & OPERATION</span></div>
+        </div>
+      </div>
+      <div class="career-stats" aria-label="주요 경력 지표">
+        <div><strong>17+</strong><span>YEARS<br />PROFESSIONAL</span></div>
+        <div><strong>30%</strong><span>API RESPONSE<br />IMPROVEMENT</span></div>
+        <div><strong>200K+</strong><span>SERVICE<br />USERS</span></div>
+        <div><strong>A–Z</strong><span>DESIGN TO<br />OPERATION</span></div>
+      </div>
+      <div class="palette" aria-label="디자인 컬러 팔레트">
+        <div class="swatch swatch-ink"><span>Ink</span><code>#0B0D0C</code></div>
+        <div class="swatch swatch-paper"><span>Paper</span><code>#F4F5F0</code></div>
+        <div class="swatch swatch-signal"><span>Signal</span><code>#C7FF42</code></div>
+        <div class="swatch swatch-muted"><span>Muted</span><code>#7D827E</code></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><p class="kicker">LET'S BUILD SOMETHING RELIABLE.</p><a href="mailto:manic2soul@gmail.com">이야기 나누기 <span aria-hidden="true">↗</span></a></div>
+    <div class="footer-bottom"><span>© 2026 MANIC</span><span>DESIGNED & BUILT IN SEOUL</span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+</body>
+</html>
